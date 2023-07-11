@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2B39287-2BD5-4C5D-BD82-1B3DA0F1D5FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FitLine2</RootNamespace>
+    <AssemblyName>FitLine2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\coda5\OneDrive\Desktop\FitLine\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6A9DDF2620575D7C85BE0B5A9CA11A13D4A211C4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FitLine2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ZKFPEngXControl">
+      <HintPath>..\..\..\..\Downloads\ZkFingerDemo(C#) With sql Tranlated to English v2\ZkFingerDemo(C#) Similar to Visual basic Design\ZkFingerDemo\obj\x86\Release\AxInterop.ZKFPEngXControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ZKFPEngXControl">
+      <HintPath>..\..\..\..\Downloads\ZkFingerDemo(C#) With sql Tranlated to English v2\ZkFingerDemo(C#) Similar to Visual basic Design\ZkFingerDemo\obj\x86\Release\Interop.ZKFPEngXControl.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="libzkfpcsharp">
+      <HintPath>D:\libzkfpcsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>D:\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD\CConexion.cs" />
+    <Compile Include="ClassModules\clsAgregarInventario.cs" />
+    <Compile Include="ClassModules\clsAsistenciaCliente.cs" />
+    <Compile Include="ClassModules\clsCargarUsuarios.cs" />
+    <Compile Include="ClassModules\clsComprarPaquetes.cs" />
+    <Compile Include="ClassModules\clsInicio.cs" />
+    <Compile Include="ClassModules\clsLogin.cs" />
+    <Compile Include="ClassModules\clsMostrarCompras.cs" />
+    <Compile Include="ClassModules\clsPaquetes.cs" />
+    <Compile Include="ClassModules\clsTiquetes.cs" />
+    <Compile Include="EntrarPorHuella\EntradaHuella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntrarPorHuella\EntradaHuella.Designer.cs">
+      <DependentUpon>EntradaHuella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarInventario.Designer.cs">
+      <DependentUpon>AgregarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarPaquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarPaquetes.Designer.cs">
+      <DependentUpon>AgregarPaquetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarTiquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarTiquetes.Designer.cs">
+      <DependentUpon>AgregarTiquetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComprarPaquetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ComprarPaquetes.Designer.cs">
+      <DependentUpon>ComprarPaquetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HistorialAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HistorialAsistencia.Designer.cs">
+      <DependentUpon>HistorialAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HistrialSalidaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HistrialSalidaCliente.Designer.cs">
+      <DependentUpon>HistrialSalidaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistroCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistroCompras.Designer.cs">
+      <DependentUpon>RegistroCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistroUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistroUsuarios.Designer.cs">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LectorHuellaGuardar\BitmapFormat.cs" />
+    <Compile Include="LectorHuellaGuardar\HuellaGuardar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectorHuellaGuardar\HuellaGuardar.Designer.cs">
+      <DependentUpon>HuellaGuardar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\CachingProviderBase.cs" />
+    <Compile Include="Utils\GlobalCachingProvider.cs" />
+    <Compile Include="Utils\IGlobalCachingProvider.cs" />
+    <EmbeddedResource Include="EntrarPorHuella\EntradaHuella.resx">
+      <DependentUpon>EntradaHuella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgregarInventario.resx">
+      <DependentUpon>AgregarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgregarPaquetes.resx">
+      <DependentUpon>AgregarPaquetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgregarTiquetes.resx">
+      <DependentUpon>AgregarTiquetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ComprarPaquetes.resx">
+      <DependentUpon>ComprarPaquetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HistorialAsistencia.resx">
+      <DependentUpon>HistorialAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HistrialSalidaCliente.resx">
+      <DependentUpon>HistrialSalidaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegistroCompras.resx">
+      <DependentUpon>RegistroCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegistroUsuarios.resx">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectorHuellaGuardar\HuellaGuardar.resx">
+      <DependentUpon>HuellaGuardar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="FitLine2_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\Downloads\ZkFingerDemo%28C#%29 With sql Tranlated to English v2\ZkFingerDemo%28C#%29 Similar to Visual basic Design\ZkFingerDemo\obj\x86\Release\AxInterop.ZKFPEngXControl.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\ZkFingerDemo%28C#%29 With sql Tranlated to English v2\ZkFingerDemo%28C#%29 Similar to Visual basic Design\ZkFingerDemo\obj\x86\Release\Interop.ZKFPEngXControl.dll" />
+    <Analyzer Include="D:\libzkfpcsharp.dll" />
+    <Analyzer Include="D:\MySql.Data.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

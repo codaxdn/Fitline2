@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FitLine2.exe" version="1.0.0.9" publicKeyToken="5c89971c6bff765b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FitLine2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="FitLine2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.ZKFPEngXControl.dll" size="36864">
+      <assemblyIdentity name="AxInterop.ZKFPEngXControl" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PFcFYaUoo6QQ0cYeA3rY3o/4QRokqZMiAQU+Ow2sQ1A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FitLine2.exe" size="1136096">
+      <assemblyIdentity name="FitLine2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jW+BgPE2WrRqDxAidPVSvEplsVUmGwO5k4NWI3R7gbg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="libzkfpcsharp.dll" size="14336">
+      <assemblyIdentity name="libzkfpcsharp" version="1.0.0.1" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7SGaqq8h4KRvQlf8wwia9Z981v2KJC3aF+HPVWL7pNQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="758784">
+      <assemblyIdentity name="MySql.Data" version="8.0.16.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>enIKvGfVmmAebqrmEOH6AOmtHcgqCjCVa8Wzgp3ocew=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="FitLine2.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-MBKOGMU\coda5" issuerKeyHash="01d9450eafe559f0d73d5fe3aebf669b928812ba" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>jHkL7Cv2dm2vrpldeZBIzvW+W/aGdLX+h2d4+tydkJA=</DigestValue></Reference></SignedInfo><SignatureValue>G0n+lsuhQq8qlE4IlJW8y7e27BPxhnlQ5B7WdrrwB7F7FF/uhm8qLloO5MXvZwRizYZc0aC9aEdrs1ohDLUUSfdKNx94UKKMzO26wIHi2i+H6VTDKCpea+TdbNVa3mbBiYu0xIqoKyRV/4sZpjHQNC79b1Nc8oFb8FG9ta2TYxg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>r0M7FdSmmNLgmdhaTIjt8NXGnAjI6sqArNWtOT5J1y3AkYu5TejCSEigZR/2Pee19KnRienX/TXWsYfFrFDb/TBflzKp7RRenitvv3/+slRzx2/1PqIr+v1SSzpyFA53yHI29H0l8vl4cb97Aeu14aL+K5qqV3E0PXJ19vGrUzU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="90909ddcfa786787feb57486f65bbef5ce4890795d99aeaf6d76f62bec0b798c" Description="" Url=""><as:assemblyIdentity name="FitLine2.exe" version="1.0.0.9" publicKeyToken="5c89971c6bff765b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-MBKOGMU\coda5</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>BYHDDyDGUbeGgJ2eBbVfijRsa3wxM9BD52XUdK5Ifc4=</DigestValue></Reference></SignedInfo><SignatureValue>fNc5rpn/o35bZAmDzSO86H6Fqp2guzb+GnFzgOLDnc/C9lrXr+jiu5VSGPGpBYZr4qe5KGO2aRPWM7yMpMy9/SiiZA3IGSCFjRA2CEtaYMQpD6ta2+HH3aSRcz0HRefS+ZldOnaV7e41kd9sj2ojmaPZ7xdtCIYSTXdjmRWAK/Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>r0M7FdSmmNLgmdhaTIjt8NXGnAjI6sqArNWtOT5J1y3AkYu5TejCSEigZR/2Pee19KnRienX/TXWsYfFrFDb/TBflzKp7RRenitvv3/+slRzx2/1PqIr+v1SSzpyFA53yHI29H0l8vl4cb97Aeu14aL+K5qqV3E0PXJ19vGrUzU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQGbk8KJlzuYJKPkd5eB6GnTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE0AQgBLAE8ARwBNAFUAXABjAG8AZABhADUwHhcNMjMwMzA3MjEyNTA1WhcNMjQwMzA3MDMyNTA1WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE0AQgBLAE8ARwBNAFUAXABjAG8AZABhADUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAK9DOxXUppjS4JnYWkyI7fDVxpwIyOrKgKzVrTk+SdctwJGLuU3owkhIoGUf9j3ntfSp0Ynp1/011rGHxaxQ2/0wX5cyqe0UXp4rb79//rJUc8dv9T6iK/r9Uks6chQOd8hyNvR9JfL5eHG/ewHrteGi/iuaqldxND1ydfbxq1M1AgMBAAEwDQYJKoZIhvcNAQELBQADgYEATR2Ymwqau274Rjbr+v8JecAJmUEmtlJXCtkR0Zv/q4edrYb+WoZPcWgLPW1yAojF/jO8jBTwVH1OnbuaaLR0wX5o9r5+QMlS//PsoiroCeDUS1SAff+Dn2Txx0KMBRMspDg0qd+GWr58QFZDI5tFu7woAIq0ytyB21x9j4SQC8o=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
